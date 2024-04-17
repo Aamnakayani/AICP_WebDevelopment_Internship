@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header style="border-radius: 30px; max-width: 250px;max-height: 300px;margin-left: 600px; font-size: 18px; margin-top: 100px;">
+    <h1>Add Task</h1>
+    </header>
+    <form action="addtask.php" method="post" style="background-color: #60A3D9; padding: 1rem; font-size: 18px; max-width: 400px; max-height: 300px; margin-left: 550px; margin-top: 50px;">
+        <label for="title" style="font-size: 25px;color: #fff;">Task Title:</label><br>
+        <input type="text" id="title" name="title" required style="font-size: 24px;"><br>
+        <label for="description" style="font-size: 25px;color: #fff;">Task Description:</label><br>
+        <textarea id="description" name="description" required style="font-size: 25px;"></textarea><br>
+        <input style="background-color: #0074B7; color: #fff; font-size: 30px;margin-left: 130px; max-width: 700px;" type="submit" value="Add Task">
+    </form>
+</body>
+</html>
