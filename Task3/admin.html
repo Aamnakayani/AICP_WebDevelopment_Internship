@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Forms - Business Information Appliwhere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Forms</h1>
+    </header>
+
+    <!-- Admin Forms -->
+    <section id="admin-forms">
+        <h2>Add City</h2>
+        <!-- Form to add a city -->
+        <form action="add_city.php" method="post">
+            <!-- City form fields -->
+            <label for="city_name">City Name:</label>
+            <input type="text" id="city_name" name="city_name" required>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+            <button type="submit">Add City</button>
+        </form>
+
+        <h2>Add Business Category</h2>
+        <!-- Form to add a category -->
+        <form action="add_category.php" method="post">
+            <!-- Category form fields -->
+            <label for="category_name">Category Name:</label>
+            <input type="text" id="category_name" name="category_name" required>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit">Add Category</button>
+        </form>
+
+        <h2>Add Business</h2>
+        <!-- Form to add a business -->
+        <form action="add_business.php" method="post">
+            <!-- Business form fields -->
+            <label for="business_name">Business Name:</label>
+            <input type="text" id="business_name" name="business_name" required>
+            <label for="category_id">Category:</label>
+                <input type="text" id="category_id" name="category_id" required>
+                <!-- Populate options dynamically from database -->
+            <label for="city_id">City:</label>
+            <input type="text" id="city_id" name="city_id" required>
+            </select>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit">Add Business</button>
+        </form>
+    </section>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
