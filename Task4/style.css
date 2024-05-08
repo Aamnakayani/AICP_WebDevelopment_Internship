@@ -1,0 +1,39 @@
+/* CSS styles for HTML components */
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    color: #333;
+}
+
+#userList,
+#bookList,
+#borrowedBooks,
+#returnedBooks {
+    margin-bottom: 20px;
+}

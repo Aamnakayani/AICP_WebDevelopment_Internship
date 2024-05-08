@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin View</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Admin</h1>
+        
+        <!-- Display list of users -->
+        <div id="userList">
+            <h2>User List</h2>
+            <ul>
+                <?php include 'fetch_user_list.php'; ?>
+            </ul>
+        </div>
+        
+        <!-- Display list of books -->
+        <div id="bookList">
+            <h2>Book List</h2>
+            <ul>
+                <?php include 'fetch_book_list.php'; ?>
+            </ul>
+        </div>
+        
+        <!-- Buttons for admin functions -->
+        <div class="admin-functions">
+            <a href="add_book.html">Add Book</a>
+            <br>
+            <br>
+            <a href="edit_book.html">Edit Book</a>
+            <br>
+            <br>
+            <a href="remove_book.html">Remove Book</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
